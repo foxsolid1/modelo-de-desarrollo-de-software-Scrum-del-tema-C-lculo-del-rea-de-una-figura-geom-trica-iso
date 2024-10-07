@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Flujo - Cálculo de Área</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="diagram-container">
+        <div class="box start">
+            <div class="text">INICIO</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="box process">
+            <div class="text">Seleccionar figura geométrica</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="decision">
+            <div class="box decision-box">
+                <div class="text">Triángulo?</div>
+            </div>
+            <div class="arrow yes"></div>
+            <div class="arrow no"></div>
+        </div>
+        
+        <div class="box process">
+            <div class="text">Ingresar base y altura</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="box process">
+            <div class="text">Calcular área = (base * altura) / 2</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="box process">
+            <div class="text">Mostrar resultado</div>
+        </div>
+        
+        <div class="arrow no"></div>
+        <div class="decision">
+            <div class="box decision-box">
+                <div class="text">Cuadrado?</div>
+            </div>
+            <div class="arrow yes"></div>
+            <div class="arrow no"></div>
+        </div>
+        
+        <div class="box process">
+            <div class="text">Ingresar lado</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="box process">
+            <div class="text">Calcular área = lado * lado</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="box process">
+            <div class="text">Mostrar resultado</div>
+        </div>
+
+        <div class="arrow no"></div>
+        <div class="decision">
+            <div class="box decision-box">
+                <div class="text">Círculo?</div>
+            </div>
+            <div class="arrow yes"></div>
+            <div class="arrow no"></div>
+        </div>
+        
+        <div class="box process">
+            <div class="text">Ingresar radio</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="box process">
+            <div class="text">Calcular área = π * radio²</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="box process">
+            <div class="text">Mostrar resultado</div>
+        </div>
+
+        <div class="arrow"></div>
+        <div class="box end">
+            <div class="text">FIN</div>
+        </div>
+    </div>
+</body>
+</html>
